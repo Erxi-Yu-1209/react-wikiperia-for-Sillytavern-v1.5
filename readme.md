@@ -94,12 +94,6 @@ A final reply includes a collapsible HTML `Cognitive Matrix` panel containing ac
 
 With `stream=true`, the server first completes the entire loop. It then sends the whole response in one SSE content chunk, followed by a finish chunk and `[DONE]`. This is buffered SSE, not progressive token streaming. The JSON/SSE envelope uses fixed identifiers and timestamps, does not report token usage, and normally reports `stop` even when the upstream finish reason was `length`.[^transport]
 
-### Boundaries of the experiment
-
-The source review confirms the existence of an executable feedback loop, not improved writing quality. The author's comparison with random theory selection is informal. The original ReAct paper does not evaluate this roleplay implementation.[^original][^react]
-
-The legacy preset includes adult-content and safety-override directives unrelated to retrieval. They are not requirements of ReAct. Use a separately versioned, non-explicit preset for a professional demonstration; disabling the block named `nsfw` does not remove directives elsewhere.
-
 ## Part II. User guide for original version 1.5
 
 ### 1. Prepare the files and Python environment
